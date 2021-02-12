@@ -1,0 +1,63 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        System.out.println("Enter your day of week: ");
+        Scanner scanner = new Scanner(System.in);
+        String input = scanner.next();
+        System.out.println("Your day of week is: " + input);
+
+
+        String str = "Mon";
+        String str1 = "Tue";
+        String str2 = "Wed";
+        String str3 = "Thu";
+        String str4 = "Fri";
+        String str5 = "Sat";
+        String str6 = "Sun";
+
+        switch (input) {
+            case "Mon": {
+                System.out.println("Running");
+                break;
+            }
+
+            case "Tue": {
+                System.out.println("Push ups");
+                break;
+            }
+
+            case "Wed": {
+                System.out.println("Pull ups");
+                break;
+            }
+
+            case "Thu": {
+                System.out.println("Rest");
+                break;
+            }
+
+            case "Fri": {
+                System.out.println("Squatting");
+                break;
+            }
+
+            case "Sat": {
+                System.out.println("Swimming");
+                break;
+            }
+
+            case "Sun": {
+                System.out.println("Ping pong");
+                break;
+            }
+
+            default: {
+                break;
+            }
+        }
+    }
+}
