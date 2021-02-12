@@ -1,0 +1,21 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter m: ");
+        double m = scanner.nextDouble();
+        System.out.println("Enter n: ");
+        double n = scanner.nextDouble();
+        if (Math.abs(m) < Math.abs(n)) {
+            System.out.println("Closer to 10 is " + m);
+        } else if (Math.abs(n) < Math.abs(m)) {
+            System.out.println("Closer to 10 is " + n);
+        } else {
+            System.out.println("Numbers are equal");
+        }
+    }
+}
